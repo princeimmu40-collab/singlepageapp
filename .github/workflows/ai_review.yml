@@ -24,5 +24,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           PR_NUMBER: ${{ github.event.pull_request.number }}
-        # Files anni root lo unnay kabatti direct ga run cheyochu
         run: dotnet run --configuration Release --project AiReviewBot.csproj
